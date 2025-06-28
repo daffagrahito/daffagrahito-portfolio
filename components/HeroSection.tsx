@@ -139,6 +139,10 @@ export default function HeroSection({ loading }: HeroSectionProps) {
             <Button
               size="lg"
               className="bg-gradient-to-r from-cyan-500 to-purple-500 hover:from-cyan-600 hover:to-purple-600 text-white px-8 py-3 rounded-full"
+              onClick={() => {
+                const projectsSection = document.getElementById('projects');
+                projectsSection?.scrollIntoView({ behavior: 'smooth' });
+              }}
             >
               View My Work
               <ArrowRight className="ml-2 w-5 h-5" />
@@ -147,7 +151,7 @@ export default function HeroSection({ loading }: HeroSectionProps) {
               variant="outline"
               size="lg"
               className="border-cyan-500 text-cyan-400 hover:bg-cyan-500 hover:text-white px-8 py-3 rounded-full bg-transparent"
-              onClick={() => window.open('https://drive.google.com/file/d/1AEZw6eX-2zShU8alHNZFXzKD-DYj2v9Z/view?usp=sharing', '_blank')}
+              onClick={() => window.open('https://drive.google.com/file/d/1GznCaW1gI5XRb56IHMivUixKknjyn8fp/view?usp=sharing', '_blank')}
             >
               My Resume
             </Button>
